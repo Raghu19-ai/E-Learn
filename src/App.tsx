@@ -8,6 +8,12 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import DomainSelectionPage from "./pages/DomainSelectionPage";
 import Index from "./pages/Index";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import CoursesPage from "./pages/CoursesPage";
+import ProfilePage from "./pages/ProfilePage";
+import InterviewPrepPage from "./pages/InterviewPrepPage";
+import InterviewDomainPage from "./pages/InterviewDomainPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +30,12 @@ const App = () => (
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/domain-selection" element={<DomainSelectionPage />} />
           <Route path="/dashboard" element={<Index />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/courses" element={<CoursesPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/interview-prep" element={<InterviewPrepPage />} />
+          <Route path="/interview-prep/:domain" element={<InterviewDomainPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

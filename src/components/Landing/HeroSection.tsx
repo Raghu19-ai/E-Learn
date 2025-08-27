@@ -27,11 +27,11 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link to="#why-us">
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-4">
+            <a href="#why-us">
+              <Button size="lg" className="bg-accent hover:bg-accent-light text-accent-foreground text-lg px-8 py-4">
                 Discover More
               </Button>
-            </Link>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
